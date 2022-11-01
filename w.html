@@ -1,0 +1,21 @@
+<html>
+        <head>
+                <style type="text/css">
+body {margin: 0;}
+
+</style>
+          <script src="https://ctwoon.github.io/ksh/playerjs.js" type="text/javascript"></script>
+          
+        </head>
+  <body>
+          <div id="i"></div>
+          <script src="https://vjs.zencdn.net/7.20.1/video.min.js"></script>
+            <script>
+                var url = location.href.split(".html?")[1];
+                var player = new Playerjs({id:"player", file:"https://3ca02ace-9c82-11eb-9ce3-04d4c439219f.msk-static-01.cdntogo.net/hls/aWQ9MTgyNjU0NTsyOTU2NjYwNTg2OzE5OTM2ODE2OzE2NjczMTA0NzgmaD16YkZRMmt5OUVFLTE2eFh3d0tfUTZBJmU9MTY2NzM5Njg3OA/c/7f/Qcxuz9GTVB14CN5Bu.mp4/master-v1a1.m3u8"});
+                var newDiv = document.createElement("div");
+                newDiv.innerHTML = '<div id="player"></div>';
+                my_div = document.getElementById("i");
+                document.body.insertBefore(newDiv, my_div);
+            </script>
+        </body>
