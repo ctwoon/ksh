@@ -9,9 +9,9 @@ body {margin: 0;}
         </head>
   <body>
           <div id="i"></div>
-          <script src="https://vjs.zencdn.net/7.20.1/video.min.js"></script>
             <script>
                 var urll = location.href.split(".html?")[1];
+                console.log(urll);
                 var player = new Playerjs({id:"player", file:urll});
                 var newDiv = document.createElement("div");
                 newDiv.innerHTML = '<div id="player"></div>';
